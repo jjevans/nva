@@ -5,9 +5,6 @@ import yaml
 
 ####
 # Jason Evans
-# Matt Lebo
-# Partners Center for Personalized Genetic Medicine (PCPGM)
-# Partners Healthcare
 ####
 # Executable for running annotation of variants for 
 # the Novel Variant Assessment (NVA) project.
