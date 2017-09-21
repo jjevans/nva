@@ -2,7 +2,6 @@ import gi_util
 
 ####
 # Jason Evans
-# Matt Lebo
 ####
 # Find variants to assess (novel, reassess)
 # library for the Variant Assessment project (Novel Variant Assessment, NVA)
