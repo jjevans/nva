@@ -1,0 +1,118 @@
+Annotation	Cell Name	Value	Comment
+Gene symbol	Alamut.gene		
+Gene id(HGNC)	Alamut.geneId		
+Chromosome	Alamut.chrom		
+Transcript	Alamut.transcript		
+Strand	Alamut.strand		
+Transcript length	Alamut.transLen		
+Protein	Alamut.protein		
+Uniprot accession	Alamut.uniprot		
+Variant Type	Alamut varType		
+Variant coding effect	Alamut.codingEffect		
+Variant location	Alamut.varLocation		
+Genome assembly	Alamut.assembly		
+gDNA start	Alamut.gDNAstart		
+gDNA end	Alamut.gDNAend		
+Genomic-level nomenclature	Alamut.gNomen		
+cDNA start	Alamut.cDNA start		
+cDNA end	Alamut.cDNA end		
+CDNA-level nomenclature	Alamut.cNomen		
+Protein-level nomenclature	Alamut.pNomen		
+Alt. Protein-level nomenclature	Alamut.alt_pNomen		
+Exon	Alamut.exon		
+Intron	Alamut.intron		
+OMIM ID	Alamut.omimId		
+Distance to nearest splice site	Alamut.distNearestSS		
+Nearest splice site type	Alamut.nearestSSType		
+WT seq. SpliceSiteFinder score	Alamut.wtSSFScore		Predictions at nearest splice site
+WT seq. MaxEntScan score	Alamut.wtMaxEntScore		Predictions at nearest splice site
+WT seq. NNSPLICE score	Alamut.wtNNSScore		Predictions at nearest splice site
+WT seq. GeneSplicer score	Alamut.wtGSScore		Predictions at nearest splice site
+WT seq. HumanSpliceFinder score	Alamut.wtHSFScore		Predictions at nearest splice site
+Variant seq. SpliceSiteFinder score	Alamut.varSSFScore		Predictions at nearest splice site
+Variant seq. MaxEntScan score	Alamut.varMaxEntScore		Predictions at nearest splice site
+Variant seq. NNSPLICE score	Alamut.varNNSScore		Predictions at nearest splice site
+Variant seq. GeneSplicer score	Alamut.varGSScore		Predictions at nearest splice site
+Variant seq. HumanSpliceFinder score	Alamut.varHSFScore		Predictions at nearest splice site
+Average change at nearest splice site	Alamut.nearestSSChange		"Average change predicted by MaxEntScan, NNSPLICE, and HSF"
+Predicted splice site effect in the immediate variant vicinity	Alamut.localSpliceEffect		"Possible values: Cyptic Donor Strongly Activated, Cryptic Donor Weakly Activated, Cryptic Acceptor Strongly Activated, Cryptic Acceptor Weakly Activated, New Donor Site, New Acceptor Site"
+Protein domain 1	Alamut.proteinDomain1		
+Protein domain 2	Alamut.proteinDomain2		
+Protein domain 3	Alamut.proteinDomain3		
+Protein domain 4	Alamut.proteinDomain4		
+dbSNP variation	Alamut.rsId		
+dbSNP validated variation?	Alamut.rsValidated		yes/no
+dbSNP suspect variation?	Alamut.rsSuspect		Possible values: yes/no - Variant flagged as suspect by dbSNP
+dbSNP validation labels	Alamut.rsValidations		
+dbSNP number of validation categories	Alamut.rsValidationNumber		
+dbSNP variation ancestral allele	Alamut.rsAncestralAllele		
+dbSNP variation average heterozygosity	Alamut.rsHeterozygosity		
+dbSNP variation clinical significance	Alamut.rsClinicalSignificance		
+dbSNP variation global Minor Allele Frequency	Alamut.rsMAF		
+dbSNP variation global minor allele	Alamut.rsMAFAllele		
+dbSNP variation sample size	Alamut.rsMAFCount		
+ESP reference allele count in European American population	Alamut.espRefEACount		
+ESP reference allele count in African  American population	Alamut.espRefAACount		
+ESP reference allele count in all populations	Alamut.espRefAllCount		
+ESP alternate allele count in European American population	Alamut.espAltEACount		
+ESP alternate allele count in African  American population	Alamut.espAltAACount		
+ESP alternate allele count in all populations	Alamut.espAltAllCount		
+Minor allele frequency in European American population	Alamut.espEAMAF		
+Minor allele frequency in African  American population	Alamut.espAAMAF		
+Minor allele frequency in all populations	Alamut.espAllMAF		
+Alternate allele frequency in European American population	Alamut.espEAAAF		
+Alternate allele frequency in African  American population	Alamut.espAAAAF		
+Alternate allele frequency in all populations	Alamut.espAllAAF		
+Average sample read depth	Alamut.espAvgReadDepth		
+HGMD Mutation id	Alamut.hgmdId		
+HGMD Mutation phenotype	Alamut.hgmdPhenotype		
+HGMD Mutation web link	Alamut.hgmdWebLink		
+HGMD Mutation PubMed id	Alamut.hgmdPubMedId		
+HGMD sub-category	Alamut.hgmdSubCategory		=HYPERLINK("https://portal2.biobase-international.com/hgmd/pro/global.php#tag","DP, DFP, FP, FTV, DM?, DM - see HGMD Documentation website")
+Substitutions			
+Insertion nucleotides	Alamut.insNucs		
+Deletion nucleotides	Alamut.delNucs		
+Type	Alamut.substType		"transition,transversion"
+WT nucleotide	Alamut.wtNuc		
+Variant nucleotide	Alamut.varNuc		
+Nucleotide change	Alamut.nucChange		
+PhastCons score	Alamut.phastCons		
+phyloP score	Alamut.phyloP		
+All coding substitutions			
+WT AA (1 letter)	Alamut.wtAA_1		
+WT AA (3 letters)	Alamut.wtAA_3		
+WT codon	Alamut.wtCodon		
+WT codon frequency	Alamut.wtCodonFreq		
+Variant AA (1 letter)	Alamut.varAA_1		
+Variant AA (3 letters)	Alamut.varAA_3		
+Variant codon	Alamut.varCodon		
+Variant codon frequency	Alamut.varCodonFreq		
+AA Position	Alamut.posAA		
+Missense only			
+Number of orthologues in alignment	Alamut.nOrthos		
+Number of conserved residues in alignment	Alamut.conservedOrthos		
+Most distant species in which AA is conserved	Alamut.conservedDistSpecies		
+BLOSUM45	Alamut.BLOSUM45		
+BLOSUM62	Alamut.BLOSUM62		
+BLOSUM80	Alamut.BLOSUM80		
+WT AA composition	Alamut.wtAAcomposition		
+Variant AA composition	Alamut.varAAcomposition		
+WT AA polarity	Alamut.wtAApolarity		
+Variant AA polarity	Alamut.varAApolarity		
+WT AA volume	Alamut.wtAAvolume		
+Variant AA volume	Alamut.varAAvolume		
+Grantham distance	Alamut.granthamDist		
+AlignGVGD class	Alamut.AGVGDclass		
+AlignGVGD: variation(GV)	Alamut.AGVGDgv		
+AlignGVGD: variation(GD)	Alamut.AGVGDgd		
+SIFT prediction	Alamut.SIFTprediction		
+SIFT weight	Alamut.SIFTweight		
+SIFT median	Alamut.SIFTmedian		
+PolyPhen-2 prediction	Alamut.PPH2prediction		"qualitative ternary classification at 10%/20% (20%/40% for HumVar) FPR thresholds (""benign"", ""possibly damaging"", ""probably damaging"")"
+PolyPhen-2 class	Alamut.PPH2class		"probabilistic binary classifier outcome (""damaging"" or ""neutral"")"
+PolyPhen-2 score	Alamut.PPH2score		classifier probability of the variation being damaging
+MAPP prediction	Alamut.MAPPprediction		
+MAPP p-value	Alamut.MAPPpValue		
+MAPP p-value median	Alamut.MAPPpValueMedian		
+MutationTaster prediction	Alamut.TASTERprediction		
+MutationTaster p-value	Alamut.TASTERpValue		
