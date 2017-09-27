@@ -29,14 +29,14 @@ GeneInsight:
         url:
             GenomeBuildMapping: https://geneinsight-lmm-ws.partners.org/services/GenomeBuildMapping?wsdl
             Variant: https://geneinsight-lmm-ws.partners.org/services/Variant?wsdl
-        user: lmm
-        password: x377BLCi
+        user: webserviceuser
+        password: passwd1
     database: #CMS
-        user: gigpad_clinical
-        password: g2J$3KHU
-        host: racclusr2.dipr.partners.org
+        user: limsuser
+        password: passwd1
+        host: limshost.dipr.partners.org
         port: 1521
-        service: gpadprod.pcpgm.partners.org
+        service: lims.pcpgm.partners.org
 Alamut:
     cleanup: true #remove remote files, true/false
     executable: /opt/alamut-ht/software/current/alamut-ht
