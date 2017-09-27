@@ -31,3 +31,44 @@ Parse, populate sheet, transfer to assessible file system
 
 NOTE: The code in this repository is most of the code used for this project.  Some content is ommitted in concern for breach of patient confidentiality.
 
+##notes on installation and configuration of the variant assessment process
+
+#virtual machines
+novel-assess.dipr.partners.org
+pcpgm.dipr.partners.org
+alamut-ht1.dipr.partners.org
+
+
+#production code put by direct copy of directory SVN/ngs/NVA to 
+	/pcpgm/Tools/code on VMs
+	
+	
+#cronjob set up to run va_exec.py (whole process) 
+	and va_dirtree.py (directory creation and file transfer)
+	
+
+##setting up virtual machine from fresh build
+
+#ssh keys
+ssh: need to ssh to alamut vm once to create entry of host into known_hosts ssh file
+
+#python-devel (python development headers and libs)
+	sudo rpm -Uvf python-devel-2.6.6-51.el6.x86_64.rpm
+
+#python libs (sudo easy_install)
+pyyaml
+paramiko: easy_install http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/pycrypto-2.1.0.tar.gz
+suds
+xlwt
+
+	
+#Oracle
+install instant client and python lib cx_Oracle
+	all necessary files and a little instruction 
+	in SVN/ngs/bioinfo/People/Jason/build/cx_oracle_install.tar.gz
+
+LD_LIBRARY_PATH has to be set in .bashrc if running from va_exec.py directly 
+	(alternative is running sh script nva_run.sh which sets up environment)
+	export LD_LIBRARY_PATH=/usr/lib/oracle/11.2/client64/lib
+
+
