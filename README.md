@@ -15,22 +15,22 @@ Identify which variants need assessment
     #Keep only those variants that haven't been recently assessed
     #The remaining variants need revisiting to consider any new finding supporting conclusive pathogenicity
     
-Run Alamut Batch on remote server
-    #SFTP input vcf to remote host
-    #Connect to remote host using SSH
-    #Run Alamut Batch
-    #Transfer output file back to local server
-
-Parse, populate sheet, transfer to assessible file system
-    #Transform Alamut Batch output to fit desired Excel format
-    #Created Excel workbook with Python to convert a table and apply styles to this sheet
-    #Mount to filesystem and transfer file 
-    
+Run Alamut Batch on remote server </br>
+    #SFTP input vcf to remote host</br>
+    #Connect to remote host using SSH</br>
+    #Run Alamut Batch</br>
+    #Transfer output file back to local server</br>
+</br>
+Parse, populate sheet, transfer to assessible file system</br>
+    #Transform Alamut Batch output to fit desired Excel format</br>
+    #Created Excel workbook with Python to convert a table and apply styles to this sheet</br>
+    #Mount to filesystem and transfer file </br>
+  </br></br></br>  
 ![nva_workflow](https://user-images.githubusercontent.com/803012/30942794-02e45a12-a3bb-11e7-9395-f1510cf369fe.png)
 
-
+</br>
 NOTE: The code in this repository is most of the code used for this project.  Some content is ommitted in concern for breach of patient confidentiality.
-
+</br></br></br></br>
 ##notes on installation and configuration of the variant assessment process
 
 #virtual machines
