@@ -26,7 +26,7 @@ Parse, populate sheet, transfer to assessible file system
     #Created Excel workbook with Python to convert a table and apply styles to this sheet
     #Mount to filesystem and transfer file 
     
-![Image of nva](https://github.com/jjevans/nva/blob/master/nva_workflow.pdf)
+![nva_workflow](https://user-images.githubusercontent.com/803012/30942794-02e45a12-a3bb-11e7-9395-f1510cf369fe.png)
 
 
 NOTE: The code in this repository is most of the code used for this project.  Some content is ommitted in concern for breach of patient confidentiality.
