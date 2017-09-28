@@ -15,11 +15,11 @@ va_exec.py is the top level application.  va_process.py is the top level library
  3. filename for log
  </br></br></br>
 
-**Identify which variants need assessment**
-    #Query LIMS for all variants sequenced
-    #Filter all variants classified as benign/pathogenic.  The remaining variants don't have conclusive evidence and need assessment
-    #Keep only those variants that haven't been recently assessed
-    #The remaining variants need revisiting to consider any new finding supporting conclusive pathogenicity
+**Identify which variants need assessment**</br>
+    #Query LIMS for all variants sequenced</br>
+    #Filter all variants classified as benign/pathogenic.  The remaining variants don't have conclusive evidence and need assessment</br>
+    #Keep only those variants that haven't been recently assessed</br>
+    #The remaining variants need revisiting to consider any new finding supporting conclusive pathogenicity</br>
     
 **Run Alamut Batch on remote server** </br>
     #SFTP input vcf to remote host</br>
