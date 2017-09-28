@@ -4,16 +4,16 @@ Application to annotate variants for interpretation of it being causal to condit
 This application is a tool to assist in queueing which uncharacterized variants need assessment as to pathogenicity.  Checking LIMS, any variants encountered in the lab are candidates for assessment.  The candidate variants that lack conclusive data to be confident in its role need be assessed on a regular and systematic iterative curation.
 
 
-va_exec.py is the top level application.  va_process.py is the top level library responsible for all the following processes along with logging progress to file.
+va_exec.py is the top level application.  va_process.py is the top level library responsible for all the following processes along with logging progress to file.  The pipeline for this application does the core tasks of determining which variants to assess, annotating using Alamut Batch, parsing to spreadsheet and placement of file assessible to those making the interpretation.
+
 
  **usage: va_exec.py config directory logfilename**</br>
  
- arguments:</br> 
+**arguments:**</br> 
  1. yaml configuration_file</br>
  2. processing directory</br>
  3. filename for log
  </br></br></br>
-The pipeline for this application does the core tasks of determining which variants to assess, annotating using Alamut Batch, parsing to spreadsheet and placement of file assessible to those making the interpretation.
 
 **Identify which variants need assessment**
     #Query LIMS for all variants sequenced
