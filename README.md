@@ -28,10 +28,31 @@ Parse, populate sheet, transfer to assessible file system</br>
   </br></br></br>  
  
  #Key Files</br>
- Configuration file: nva_conf.yml</br>
- Executable: nva_run.sh (on cronjob)</br>
- Libraries in modules directory - see diagram above</br>
+ Configuration file: nva_conf.yml</br></br>
+ Executable: va_exec.py</br></br></br>
+ Libraries (modules directory):</br>
+    alamut_util.py</br>
+     - ssh to server using </br>
+       paramiko, run annotation </br>
+       with Alamut Batch</br></br>
+    remote_machine.py</br>
+     - implementation to run</br> 
+       command-line tools on </br>
+       another server</br></br>
+    lsf_util.py</br>
+      - library wraps drmaa-python </br>
+        allowing job runner control </br>
+        from your own script</br></br>
+    aln_util.py</br>
+     - wrap bwa (system), pysam</br></br>
+    gi_util.py</br>
+     - GeneInsight Oracle or web </br>
+       service queries.</br></br>  
  Supplementary is directory of helper files for making Excel workbook</br>
+ </br></br>
+ usage: va_exec.py config directory logfilename</br>
+ 
+ arguments: yaml configuration_file, processing directory, filename for log
  </br></br></br>
  
 ![nva_workflow](https://user-images.githubusercontent.com/803012/30942794-02e45a12-a3bb-11e7-9395-f1510cf369fe.png)
@@ -42,18 +63,18 @@ NOTE: The code in this repository is most of the code used for this project.  So
 </br></br></br>
 ##notes on installation and configuration of the variant assessment process
 
-#virtual machines
-novel-assess.dipr.partners.org
-pcpgm.dipr.partners.org
-alamut-ht1.dipr.partners.org
+#virtual machines</br>
+novel-assess.dipr.partners.org</br>
+pcpgm.dipr.partners.org</br>
+alamut-ht1.dipr.partners.org</br>
 
 
-#production code put by direct copy of directory SVN/ngs/NVA to 
-	/pcpgm/Tools/code on VMs
+#production code put by direct copy of directory SVN/ngs/NVA to </br>
+	/pcpgm/Tools/code on VMs</br>
 	
 	
-#cronjob set up to run va_exec.py (whole process) 
-	and va_dirtree.py (directory creation and file transfer)
+#cronjob set up to run va_exec.py (whole process) </br>
+	and va_dirtree.py (directory creation and file transfer)</br>
 	
 
 ##setting up virtual machine from fresh build
@@ -65,16 +86,16 @@ ssh: need to ssh to alamut vm once to create entry of host into known_hosts ssh 
 	sudo rpm -Uvf python-devel-2.6.6-51.el6.x86_64.rpm
 
 #python libs (sudo easy_install)
-pyyaml
-paramiko: easy_install http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/pycrypto-2.1.0.tar.gz
-suds
-xlwt
+pyyaml</br>
+paramiko: easy_install http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/pycrypto-2.1.0.tar.gz</br>
+suds</br>
+xlwt</br>
 
 	
 #Oracle
 install instant client and python lib cx_Oracle
-	all necessary files and a little instruction 
-	in SVN/ngs/bioinfo/People/Jason/build/cx_oracle_install.tar.gz
+	all necessary files and a little instruction </br>
+	in SVN/ngs/bioinfo/People/Jason/build/cx_oracle_install.tar.gz</br>
 
 LD_LIBRARY_PATH has to be set in .bashrc if running from va_exec.py directly 
 	(alternative is running sh script nva_run.sh which sets up environment)
