@@ -6,7 +6,7 @@ This application is a tool to assist in queueing which uncharacterized variants 
 
 va_exec.py is the top level application.  va_process.py is the top level library responsible for all the following processes along with logging progress to file.
 
- usage: va_exec.py config directory logfilename</br>
+ **usage: va_exec.py config directory logfilename**</br>
  
  arguments:</br> 
  1. yaml configuration_file</br>
@@ -15,19 +15,19 @@ va_exec.py is the top level application.  va_process.py is the top level library
  </br></br></br>
 The pipeline for this application does the core tasks of determining which variants to assess, annotating using Alamut Batch, parsing to spreadsheet and placement of file assessible to those making the interpretation.
 
-Identify which variants need assessment
+**Identify which variants need assessment**
     #Query LIMS for all variants sequenced
     #Filter all variants classified as benign/pathogenic.  The remaining variants don't have conclusive evidence and need assessment
     #Keep only those variants that haven't been recently assessed
     #The remaining variants need revisiting to consider any new finding supporting conclusive pathogenicity
     
-Run Alamut Batch on remote server </br>
+**Run Alamut Batch on remote server** </br>
     #SFTP input vcf to remote host</br>
     #Connect to remote host using SSH</br>
     #Run Alamut Batch</br>
     #Transfer output file back to local server</br>
 </br>
-Parse, populate sheet, transfer to assessible file system</br>
+**Parse, populate sheet, transfer to assessible file system**</br>
     #Transform Alamut Batch output to fit desired Excel format</br>
     #Created Excel workbook with Python to convert a table and apply styles to this sheet</br>
     #Mount to filesystem and transfer file </br>
@@ -37,7 +37,7 @@ Parse, populate sheet, transfer to assessible file system</br>
 
 </br></br></br>
  
- #Key Files</br>
+ **Key Files**</br>
  Configuration file: nva_conf.yml</br></br>
  Executable: va_exec.py</br></br></br>
  Libraries (modules directory):</br>
@@ -61,9 +61,10 @@ Parse, populate sheet, transfer to assessible file system</br>
  Supplementary is directory of helper files for making Excel workbook</br>
  </br></br>
 
-NOTE: The code in this repository is most of the code used for this project.  Some content is ommitted in concern for breach of patient confidentiality.
+**NOTE:** The code in this repository is most of the code used for this project.  Some content is ommitted in concern for breach of patient confidentiality.
+
 </br></br></br>
-##notes on installation and configuration of the variant assessment process
+**##notes on installation and configuration of the variant assessment process**
 
 #virtual machines</br>
 novel-assess.dipr.partners.org</br>
