@@ -1,7 +1,7 @@
 # nva
 Novel Variant Assessment, NVA, an application to annotate variants for variant assessment and classification.
 
-This application is a tool to assist in queueing which uncharacterized variants need assessment as to pathogenicity.  Checking LIMS, any variants encountered in the lab are candidates for assessment.  The candidate variants that lack conclusive data to be confident in its role need be assessed on a regular and systematic iterative curation.
+This application is a tool to assist in queueing which uncharacterized variants need assessment as to pathogenicity.  Checking LIMS, any variants encountered in the lab are candidates for assessment.  The candidate variants that lack conclusive data to be confident in its role need be assessed on a regular and systematic basis.
 
 
 va_exec.py is the top level application.  va_process.py is the top level library responsible for all the following processes along with logging progress to file.  The pipeline for this application does the core tasks of determining which variants to assess, annotating using Alamut Batch, parsing to spreadsheet and placement of file assessible to those making the interpretation.
