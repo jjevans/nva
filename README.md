@@ -6,7 +6,13 @@ This application is a tool to assist in queueing which uncharacterized variants 
 
 va_exec.py is the top level application.  va_process.py is the top level library responsible for all the following processes along with logging progress to file.
 
-
+ usage: va_exec.py config directory logfilename</br>
+ 
+ arguments:</br> 
+ 1. yaml configuration_file</br>
+ 2. processing directory</br>
+ 3. filename for log
+ </br></br></br>
 The pipeline for this application does the core tasks of determining which variants to assess, annotating using Alamut Batch, parsing to spreadsheet and placement of file assessible to those making the interpretation.
 
 Identify which variants need assessment
@@ -27,11 +33,6 @@ Parse, populate sheet, transfer to assessible file system</br>
     #Mount to filesystem and transfer file </br>
   </br></br></br>  
 
- usage: va_exec.py config directory logfilename</br>
- 
- arguments: yaml configuration_file, processing directory, filename for log
- </br></br></br>
- 
 ![nva_workflow](https://user-images.githubusercontent.com/803012/30942794-02e45a12-a3bb-11e7-9395-f1510cf369fe.png)
 
 </br></br></br>
