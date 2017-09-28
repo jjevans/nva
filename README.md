@@ -1,5 +1,5 @@
 # nva
-Application to annotate variants for interpretation of it being causal to condition.
+Novel Variant Assessment, NVA, an application to annotate variants for variant assessment and classification.
 
 This application is a tool to assist in queueing which uncharacterized variants need assessment as to pathogenicity.  Checking LIMS, any variants encountered in the lab are candidates for assessment.  The candidate variants that lack conclusive data to be confident in its role need be assessed on a regular and systematic iterative curation.
 
