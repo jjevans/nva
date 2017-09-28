@@ -26,6 +26,15 @@ Parse, populate sheet, transfer to assessible file system</br>
     #Created Excel workbook with Python to convert a table and apply styles to this sheet</br>
     #Mount to filesystem and transfer file </br>
   </br></br></br>  
+
+ usage: va_exec.py config directory logfilename</br>
+ 
+ arguments: yaml configuration_file, processing directory, filename for log
+ </br></br></br>
+ 
+![nva_workflow](https://user-images.githubusercontent.com/803012/30942794-02e45a12-a3bb-11e7-9395-f1510cf369fe.png)
+
+</br></br></br>
  
  #Key Files</br>
  Configuration file: nva_conf.yml</br></br>
@@ -50,14 +59,6 @@ Parse, populate sheet, transfer to assessible file system</br>
        service queries.</br></br>  
  Supplementary is directory of helper files for making Excel workbook</br>
  </br></br>
- usage: va_exec.py config directory logfilename</br>
- 
- arguments: yaml configuration_file, processing directory, filename for log
- </br></br></br>
- 
-![nva_workflow](https://user-images.githubusercontent.com/803012/30942794-02e45a12-a3bb-11e7-9395-f1510cf369fe.png)
-
-</br></br></br>
 
 NOTE: The code in this repository is most of the code used for this project.  Some content is ommitted in concern for breach of patient confidentiality.
 </br></br></br>
